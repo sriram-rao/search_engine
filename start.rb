@@ -1,11 +1,11 @@
 require 'mechanize'
 require 'thread'
 require_relative './crawler/crawler.rb'
-require_relative './crawler/models.rb'
 require_relative './dbconnect.rb'
 require 'sinatra'
 
-require 'sinatra'
+set :server, 'webrick'
+
 get '/' do
  erb :form
 end
