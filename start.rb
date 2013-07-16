@@ -12,6 +12,21 @@ get '/' do
  erb :form
 end
 
+post '/form' do
+  @words = params[:words]
+  @link = params[:link_name]
+
+  auth = Authentication.where(:authentication_token=>params[:auth_token])
+
+  if auth.nil?
+    status 403
+  else
+    status 200
+  end
+
+  erb :display
+end
+
 def app
   Sinatra::Application
 end
