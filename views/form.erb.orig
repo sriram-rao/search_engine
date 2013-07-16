@@ -42,11 +42,16 @@ body {
 <img src="http://www.wallcoo.net/flower/digital-flowers-photomanipulation/images/01_2950_Digital-illustration-flowers_wallcoo.com.jpg"   width="228" height="152" id="image">
 </img> 
 <form action="/form" method="post">  
+<<<<<<< HEAD
+    <input type="text" name="q">  
+    <input type="submit" value="search">  
+=======
      
 <div id="formbox">
             <input type="text" name="q" id="btn_s"> 
             <input value="Search" title="Search" name="search" type="submit" id="btn_i">
 </div>
+>>>>>>> upstream/master
 </form>
 
 

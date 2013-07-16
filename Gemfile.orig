@@ -1,13 +1,20 @@
 source "https://rubygems.org"
 
+ruby '2.0.0'
+
 gem 'mechanize'
 gem 'sanitize'
 gem 'sinatra'
 gem 'rails'
+<<<<<<< HEAD
+gem 'sqlite3'
+gem 'protected_attributes'
+=======
 
 group :development do
   gem 'sqlite3'
 end
+>>>>>>> upstream/master
 
 group :test do
   gem 'rspec-given'
